@@ -1,0 +1,252 @@
+/* Root */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f4fb;
+    color: #211f36;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Hero */
+
+.hero {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e3e1f2;
+}
+
+.hero nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.menu a {
+    font-weight: 500;
+    color: #6c6b80;
+}
+
+.menu a:hover,
+.menu a.activo {
+    color: #5f5aa3;
+    border-bottom: 2px solid #5f5aa3;
+    padding-bottom: 4px;
+}
+
+
+/* Boton */
+
+.boton {
+    background-color: #5f5aa3;
+    color: #ffffff;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #4d4880;
+}
+
+/* Formulario - Contacto */
+
+.Contacto {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+}
+
+.Etiqueta {
+    color: #5f5aa3;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.ContactoFormulario h2 {
+    font-size: 2.2rem;
+    margin-bottom: 14px;
+}
+
+.ContactoFormulario > p {
+    color: #6c6b80;
+    margin-bottom: 24px;
+    max-width: 420px;
+}
+
+.Campo {
+    margin-bottom: 18px;
+}
+
+.Campo label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.Campo input,
+.Campo select,
+.Campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e3e1f2;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.Campo textarea {
+    resize: vertical;
+}
+
+.ContactoInfo .Nota {
+    text-align: right;
+    color: #5f5aa3;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.InfoItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.InfoItem .icono {
+    font-size: 1.5rem;
+    background-color: #e7e5f7;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.InfoItem h3 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.InfoItem p {
+    color: #6c6b80;
+    font-size: 0.9rem;
+}
+
+
+/* Ubicacion */
+
+.Ubicacion {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+}
+
+.Ubicacion h2 {
+    margin-bottom: 6px;
+}
+
+.Ubicacion > p {
+    color: #6c6b80;
+    margin-bottom: 20px;
+}
+
+.Mapa img {
+    border-radius: 14px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.VolverInicio {
+    display: inline-block;
+    margin-top: 24px;
+    color: #5f5aa3;
+    font-weight: bold;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e3e1f2;
+    padding: 30px 24px;
+    text-align: center;
+}
+
+.FooterLogo {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.FooterMenu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 12px;
+}
+
+.FooterMenu a {
+    color: #6c6b80;
+}
+
+footer p {
+    color: #6c6b80;
+    font-size: 0.85rem;
+}
+
+
+/* media Querry */
+
+@media (max-width: 768px) {
+    .Inicio,
+    .Contacto {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .ContactoInfo .Nota {
+        text-align: left;
+    }
+}
